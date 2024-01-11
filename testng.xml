@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="initsetup">
+	   <parameter name="browser" value="chrome"></parameter>
+	  <parameter name="url" value="https://adactinhotelapp.com/"></parameter>
+	   <parameter name="name" value="alphanumeric"></parameter>
+	  <parameter name="password" value="9894410892"></parameter>
+	   <parameter name="checkindate" value="05/01/2024"></parameter>
+	  <parameter name="checkoutdate" value="07/01/2024"></parameter>
+	 
+    <classes>
+      
+      <class name="org.program.Adacting"/>
+      
+      
+    </classes>
+  </test> <!-- Test -->
+  <listeners>
+	  <listener class-name="org.program.AllfailedRerun"></listener>
+  </listeners> 
+  <test thread-count="5" name="flipkart">
+	 
+    <classes>
+      
+      <class name="org.program.flipkart"/>
+      
+      
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

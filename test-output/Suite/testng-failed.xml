@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.program.AllfailedRerun"/>
+  </listeners>
+  <test thread-count="5" name="initsetup(failed)">
+    <parameter name="password" value="9894410892"/>
+    <parameter name="checkoutdate" value="07/01/2024"/>
+    <parameter name="checkindate" value="05/01/2024"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="name" value="alphanumeric"/>
+    <parameter name="url" value="https://adactinhotelapp.com/"/>
+    <classes>
+      <class name="org.program.Adacting">
+        <methods>
+          <include name="aft"/>
+          <include name="initsetup"/>
+          <include name="tc5"/>
+          <include name="exitconfig"/>
+          <include name="tc4"/>
+        </methods>
+      </class> <!-- org.program.Adacting -->
+    </classes>
+  </test> <!-- initsetup(failed) -->
+  <test thread-count="5" name="flipkart(failed)">
+    <classes>
+      <class name="org.program.flipkart">
+        <methods>
+          <include name="searchPhone"/>
+          <include name="initSetup"/>
+        </methods>
+      </class> <!-- org.program.flipkart -->
+    </classes>
+  </test> <!-- flipkart(failed) -->
+</suite> <!-- Failed suite [Suite] -->
